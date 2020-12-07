@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+.container{
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#container{
+    width: 800px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container:before,
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*======== site css ========*/ 
+/*======== home css ========*/ 
+
+#home{
+    height: 800px;
+    width: 100%;
+    background: rgb(30,87,153);
+    background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(125,185,232,1) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%);
+    background: linear-gradient(135deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+    position: relative;
+    z-index: 1;
+}
+
+.header-logo img {
+    width: 186px;
+    height: 192px;
+}
+
+.header-menu {
+    float: right;
+    margin-top: -146px;
+}
+
+.header-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header-menu ul li:last-child {
+    border: 1px solid #fff;
+    padding: 7px 11px;
+    border-radius: 13px;
+    transition: .4s;
+}
+
+.header-menu ul li:last-child:hover{
+    background: #205DA0;
+    transition: .4s;
+}
+
+.header-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.square-1 {
+    position: absolute;
+    content: '';
+    height: 330px;
+    width: 330px;
+    background: linear-gradient(to right, #4A9CDF, #2679C4);
+    border-radius: 50%;
+    animation: zoom 2s linear infinite;
+    margin-left: 770px;
+    bottom: 270px;
+    z-index: -1;
+    animation-name: nazma;
+    animation-direction: alternate;
+    bottom: 313px;
+}
+
+@keyframes nazma{
+    form{
+        height: 330px;
+        width: 330px;
+    }
+    to{
+        height: 400px;
+        width: 400px;
+    }
+}
+
+.square-2 {
+    position: absolute;
+    content: '';
+    left: 22px;
+    bottom: 50px;
+    height: 350px;
+    width: 350px;
+    background: linear-gradient(to right, #4A9CDF, #3774a7);
+    border-radius: 50%;
+    animation: zoom 2s linear infinite;
+    z-index: -1;
+    animation-name: nazma1;
+    animation-direction: alternate;
+}
+
+@keyframes nazma1{
+    form{
+        height: 350px;
+        width: 350px;
+    }
+    to{
+        height: 450px;
+        width: 450px;
+    }
+}
+
+.pera {
+    margin-top: 122px;
+}
+
+.pera h2 {
+    font-size: 72px;
+    color: #fff;
+    
+}
+
+.text-container {
+    width: 450px;
+    overflow: hidden;
+}
+
+.text-container h2 {
+    font-size: 72px;
+    color: #fff;
+    animation: type 4s steps(22);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    width: 21ch;
+    animation-iteration-count: infinite;
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 21ch;
+    }
+}
+
+button {
+    margin-top: 54px;
+    padding: 18px 40px;
+    background: #0e4677;
+    border: none;
+    color: #fff;
+    border-radius: 9px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: #1c62a0;
+    transition: .3s;
+}
+
+i.far.fa-hand-point-right {
+    margin-right: 10px;
+}
+
+/*======== registration form css ========*/ 
+
+.form {
+    height: 480px;
+    width: 500px;
+    background: rgb(63,76,107);
+    background: -moz-linear-gradient(-45deg, rgba(63,76,107,1) 0%, rgba(63,76,107,1) 32%, rgba(63,76,107,1) 48%, rgba(63,76,107,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 32%,rgba(63,76,107,1) 48%,rgba(63,76,107,1) 100%);
+    background: linear-gradient(135deg, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 32%,rgba(63,76,107,1) 48%,rgba(63,76,107,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=1 );
+    margin-left: 59%;
+    margin-top: -296px;
+    opacity: .9;
+}
+
+.img {
+    margin-top: 27px;
+    margin-left: 112px;
+    margin-bottom: -87px;
+}
+
+img.img{
+    height: 100px;
+    width: 100px;
+}
+
+.form h3 {
+    font-size: 36px;
+    margin-left: 38%;
+    cursor: pointer;
+    color: #16e239;
+}
+
+span {
+    color: #c5e804;
+}
+
+.form h2 {
+    font-size: 31px;
+    border-bottom: 4px solid #fff;
+    display: inline-block;
+    margin-left: 24%;
+    margin-top: 11px;
+    margin-bottom: 39px;
+    color: #fff;
+}
+
+form {
+    font-size: 26px;
+    color: #fff;
+    margin-left: 14%;
+}
+
+input[type="text"] {
+    padding: 8px 66px 8px 19px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.form-2 {
+    margin-top: 8px;
+}
+
+.form-2 input {
+    margin-left: 45px;
+}
+
+.form-3 {
+    margin-top: 8px;
+}
+
+.form-3 input {
+    margin-left: 14px;
+    padding: 8px 66px 36px 19px;
+}
+
+.form-4 {
+    margin-top: 8px;
+}
+
+.form-4 input {
+    margin-left: 35px;
+}
+
+button.frm-btn {
+    margin-top: 23px;
+    margin-left: 199px;
+    padding: 12px 47px;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: #9cad0e;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+button.frm-btn:hover{
+    background: #328806;
+    color: #fff;
+}
+
+#registration-form{
+    margin-left: 50%;
+    animation-name: nazma2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: alternate;
+}
+
+
+@keyframes nazma2{
+    form{
+        margin-left: 50%;
+        top: 0;
+    }
+    to{ 
+        margin-left: 61%;
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
